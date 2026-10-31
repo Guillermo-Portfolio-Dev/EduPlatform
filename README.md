@@ -1,6 +1,6 @@
 # 🚀 EduPlatform - Microservices Architecture & API Gateway
 
-Una solución de arquitectura empresarial basada en microservicios utilizando **.NET 8/9**, enfocada en alta mantenibilidad, seguridad perimetral y alto rendimiento.
+Una solución de arquitectura empresarial basada en microservicios utilizando **.NET 9**, enfocada en alta mantenibilidad, seguridad perimetral y alto rendimiento.
 
 > 📌 **Estado del Proyecto:** En desarrollo activo (Fase 1 completada: YARP API Gateway & Identity Management).
 
@@ -8,7 +8,7 @@ Una solución de arquitectura empresarial basada en microservicios utilizando **
 
 ## 🛠️ Tecnologías y Herramientas
 
-* **Framework:** .NET 8 / .NET 9
+* **Framework:** .NET 9
 * **API Gateway:** YARP (Yet Another Reverse Proxy)
 * **Persistencia de Datos:** Dapper (Micro-ORM de alto rendimiento)
 * **Base de Datos:** SQL Server
