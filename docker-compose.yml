@@ -1,0 +1,29 @@
+# version: '3.4'
+
+services:
+  # contenedor de SQL Server para las bases de datos de los microservicios
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: eduplatform-sqlserver
+    environment:
+        - ACCEPT_EULA=Y
+        - SA_PASSWORD=Ev5tzx8e*11
+    ports:
+        - "1433:1433"
+    networks:
+        - eduplatform-network
+  # contenedor de RabbitMQ para la mensajeria asincrona y eventos
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: eduplatform-rabbitmq
+    ports:
+        - "5672:5672" # puerto del protocolo AMQP
+        - "15672:15672" # panel de control web de rabbitMQ
+    environment:
+        - RABBITMQ_DEFAULT_USER=guest
+        - RABBITMQ_DEFAULT_PASS=guest
+    networks:
+        - eduplatform-network
+networks:
+    eduplatform-network:
+        driver: bridge

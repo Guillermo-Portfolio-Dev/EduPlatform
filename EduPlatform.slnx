@@ -1,0 +1,28 @@
+<Solution>
+  <Folder Name="/BuildingBlocks/">
+    <Project Path="EduPlatform.BuildingBlocks/EduPlatform.BuildingBlocks.csproj" />
+  </Folder>
+  <Folder Name="/Elementos de la solución/">
+    <File Path="docker-compose.yml" />
+  </Folder>
+  <Folder Name="/Gateways/">
+    <Project Path="EduPlatform.Gateway/EduPlatform.Gateway.csproj" />
+  </Folder>
+  <Folder Name="/Services/" />
+  <Folder Name="/Services/Academic/">
+    <Project Path="Academic.Api/Academic.Api.csproj" />
+    <Project Path="Academic.Application/Academic.Application.csproj" />
+    <Project Path="Academic.Domain/Academic.Domain.csproj" />
+    <Project Path="Academic.Infrastructure/Academic.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Services/Billing/">
+    <Project Path="Billing.Api/Billing.Api.csproj" />
+    <Project Path="Billing.Application/Billing.Application.csproj" />
+    <Project Path="Billing.Domain/Billing.Domain.csproj" />
+    <Project Path="Billing.Infrastructure/Billing.Infrastructure.csproj" />
+    <Project Path="Billing.Worker/Billing.Worker.csproj" Id="d67cd023-ec4b-49fb-9fe7-255b30c41151" />
+  </Folder>
+  <Folder Name="/Services/Notifications/">
+    <Project Path="Notifications.Worker/Notifications.Worker.csproj" />
+  </Folder>
+</Solution>
